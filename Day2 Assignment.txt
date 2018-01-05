@@ -1,0 +1,175 @@
+1. Write a program in C to display the first 10 natural numbers.
+
+sol)
+#include<stdio.h>
+int main() {
+    int i,n;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("%d ",i);
+    }
+}
+
+Test Data:
+10
+
+Output:
+1 2 3 4 5 6 7 8 9 10 
+----------------------------
+2. Write a C program to find the sum of first 10 natural numbers.
+
+sol)
+#include<stdio.h>
+int main() {
+    int i,n,sum=0;
+    scanf("%d",&n);
+    printf("The first %d natural numbers is:",n);
+    printf("\n\n");
+    for(i=1;i<=n;i++)
+    {
+        printf("%d ",i);
+    }
+    printf("\n");
+    printf("\nThe Sum is :");
+    for (i=1;i<=n;i++)
+    {
+        sum = sum + i;
+    }
+    printf("%d",sum);
+}
+
+
+Test Data:
+10
+
+Output:
+The first 10 natural numbers is:
+
+
+
+1 2 3 4 5 6 7 8 9 10 
+
+
+
+The Sum is :55
+------------------------------------
+3. Write a program in C to read 10 numbers from keyboard and find their sum and average.
+
+sol)
+#include <stdio.h>
+void main()
+{       
+    int i,n,sum=0;
+	float avg;
+	printf("Input the 10 numbers : \n");
+	for (i=1;i<=10;i++)
+	{
+                printf("Number-%d :",i);
+
+		scanf("%d",&n);
+		sum=sum+n;
+	}
+	avg=sum/10.0;
+	printf("\nThe sum of 10 no is : %d\n",sum);
+	printf("The Average is : %f\n",avg);
+ 
+}
+
+
+
+Test Data:
+Number-1 :1
+Number-2 :2
+Number-3 :3
+Number-4 :4
+Number-5 :5
+Number-6 :6
+Number-7 :7
+Number-8 :8
+Number-9 :9
+Number-10 :10
+
+Output:
+The sum of 10 no is : 55
+
+The Average is : 5.500000
+
+------------------------------------
+4. Write a program in C to display the cube of the number upto given an integer.
+
+sol)
+#include<stdio.h>
+int main() {
+    int n,op,i;
+    printf("Input number of terms : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        printf("\nNumber is : %d and cube of the %d is :%d",i,i,(i*i*i));
+    }
+}
+
+Test Data:
+Input number of terms :6
+
+
+Output:
+Number is : 1 and cube of the 1 is :1
+
+Number is : 2 and cube of the 2 is :8
+
+Number is : 3 and cube of the 3 is :27
+
+Number is : 4 and cube of the 4 is :64
+
+Number is : 5 and cube of the 5 is :125
+
+Number is : 6 and cube of the 6 is :216
+----------------------------------
+5. Write a program in C to make such a pattern like right angle triangle with a number which will repeat a number in a row.
+
+sol)
+#include<stdio.h>
+void main()
+{
+ int i,j,n;
+ printf("Enter the value of n:");
+ scanf("%d",&n);
+ for(i=0;i<=n;i++)
+ {
+  for(j=1;j<=i;j++)
+  {
+   printf("%d",i);
+  }
+ printf("\n");
+ }
+}
+Test Data:
+Enter the value of n: 5
+
+Output:
+1
+
+22
+
+333
+
+4444
+
+55555
+--------------------------------
+6. Write a C program to convert a string to a long integer. 
+
+sol)
+#include <stdio.h>
+int main()
+{
+long longa;
+longa = atol("99999");
+printf("%ld\n", longa);
+return 0;
+}
+
+Output:
+99999
